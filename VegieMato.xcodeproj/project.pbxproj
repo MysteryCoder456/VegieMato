@@ -19,6 +19,8 @@
 		C9A0054B23BF8AE6004D3234 /* VegieMatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0054A23BF8AE6004D3234 /* VegieMatoUITests.swift */; };
 		C9A0055A23BF9227004D3234 /* TitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0055923BF9227004D3234 /* TitleBar.swift */; };
 		C9A0055C23BF95C0004D3234 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0055B23BF95C0004D3234 /* HomeView.swift */; };
+		C9B0DF9823C4F5C7003148A4 /* VendorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0DF9723C4F5C7003148A4 /* VendorInfo.swift */; };
+		C9B0DF9B23C4F6AE003148A4 /* VendorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0DF9A23C4F6AE003148A4 /* VendorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		C9A0054C23BF8AE6004D3234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9A0055923BF9227004D3234 /* TitleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBar.swift; sourceTree = "<group>"; };
 		C9A0055B23BF95C0004D3234 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C9B0DF9723C4F5C7003148A4 /* VendorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorInfo.swift; sourceTree = "<group>"; };
+		C9B0DF9A23C4F6AE003148A4 /* VendorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 				C9A0052823BF8AE4004D3234 /* AppDelegate.swift */,
 				C9A0052A23BF8AE4004D3234 /* SceneDelegate.swift */,
 				C9A0052C23BF8AE4004D3234 /* AppView.swift */,
+				C9B0DF9923C4F65E003148A4 /* Vendor */,
 				C900508323BF9D0A00C4005C /* TabViews */,
 				C9A0055823BF91FD004D3234 /* SupportingViews */,
 				C9A0052E23BF8AE6004D3234 /* Assets.xcassets */,
@@ -162,6 +167,15 @@
 				C9A0055923BF9227004D3234 /* TitleBar.swift */,
 			);
 			path = SupportingViews;
+			sourceTree = "<group>";
+		};
+		C9B0DF9923C4F65E003148A4 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				C9B0DF9723C4F5C7003148A4 /* VendorInfo.swift */,
+				C9B0DF9A23C4F6AE003148A4 /* VendorView.swift */,
+			);
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,11 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B0DF9B23C4F6AE003148A4 /* VendorView.swift in Sources */,
 				C9A0055A23BF9227004D3234 /* TitleBar.swift in Sources */,
 				C9A0052923BF8AE4004D3234 /* AppDelegate.swift in Sources */,
 				C9A0052B23BF8AE4004D3234 /* SceneDelegate.swift in Sources */,
 				C9A0055C23BF95C0004D3234 /* HomeView.swift in Sources */,
 				C900508523BF9D4700C4005C /* SearchView.swift in Sources */,
+				C9B0DF9823C4F5C7003148A4 /* VendorInfo.swift in Sources */,
 				C900508723BFA0B900C4005C /* ProfileView.swift in Sources */,
 				C9A0052D23BF8AE4004D3234 /* AppView.swift in Sources */,
 			);
