@@ -14,24 +14,20 @@ struct TitleBar: View {
 	var size: CGFloat
 	
     var body: some View {
-        VStack {
-			VStack {
-				HStack {
-					Spacer()
-					
-					Text(content)
-						.font(.system(size: size))
-						.fontWeight(.bold)
-						.foregroundColor(.white)
-						.padding(.vertical, size / 10)
-					
-					Spacer()
-				}
+		VStack {
+			HStack {
+				Spacer()
+				
+				Text(content)
+					.font(.system(size: size))
+					.fontWeight(.bold)
+					.foregroundColor(.white)
+					.padding(.vertical, size / 10)
+				
+				Spacer()
 			}
-			.background(color)
-			
-			Spacer()
 		}
+		.background(color)
     }
 }
 

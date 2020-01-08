@@ -16,7 +16,7 @@ var vendors = [
 	Vendor(name: "Tomato Centre", tagline: "Epic Tomatoes!", imageName: "tomato")
 ]
 
-struct Vendor {
+struct Vendor: Hashable {
 	var name: String
 	var tagline: String
 	var imageName: String

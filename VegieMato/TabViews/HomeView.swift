@@ -10,7 +10,17 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        TitleBar(content: "VegieMato", color: Color.green, size: 57)
+		VStack {
+			TitleBar(content: "VegieMato", color: Color.green, size: 57)
+			
+			NavigationView {
+				List(vendors, id: \.self) { vendor in
+					VendorRow(vendor: vendor)
+				}
+				.navigationBarTitle(Text("Available Vendors"), displayMode: .large)
+			}
+			.padding(.top, -36)
+		}
     }
 }
 
