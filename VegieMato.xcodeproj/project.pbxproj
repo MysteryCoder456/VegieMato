@@ -3,12 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47E57020C0A06DCBA246233C /* Pods_VegieMato_VegieMatoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C547EAA2F3616E5C6452A6E /* Pods_VegieMato_VegieMatoUITests.framework */; };
+		74511A3F1A9F6CB1969BDE7A /* Pods_VegieMatoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA2B772F1EF0BE9A9FDE104 /* Pods_VegieMatoTests.framework */; };
+		BAD8CBA7402919F5345B8D0D /* Pods_VegieMato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC12AD36F9D1DF38872D9912 /* Pods_VegieMato.framework */; };
 		C900508523BF9D4700C4005C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C900508423BF9D4700C4005C /* SearchView.swift */; };
 		C900508723BFA0B900C4005C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C900508623BFA0B900C4005C /* ProfileView.swift */; };
+		C97E24DF23DC8CA900313417 /* VendorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E24DE23DC8CA900313417 /* VendorView.swift */; };
+		C97E24E023DC8CA900313417 /* VendorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E24DE23DC8CA900313417 /* VendorView.swift */; };
+		C97E24E123DC8CA900313417 /* VendorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E24DE23DC8CA900313417 /* VendorView.swift */; };
+		C97E24E323DC8D3100313417 /* VendorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E24E223DC8D3100313417 /* VendorInfo.swift */; };
+		C97E24E423DC8D3100313417 /* VendorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E24E223DC8D3100313417 /* VendorInfo.swift */; };
+		C97E24E523DC8D3100313417 /* VendorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E24E223DC8D3100313417 /* VendorInfo.swift */; };
+		C97E24E723DC8E7E00313417 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E24E623DC8E7E00313417 /* ImageView.swift */; };
+		C97E24E823DC8E7E00313417 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E24E623DC8E7E00313417 /* ImageView.swift */; };
+		C97E24E923DC8E7E00313417 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E24E623DC8E7E00313417 /* ImageView.swift */; };
 		C9A0052923BF8AE4004D3234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0052823BF8AE4004D3234 /* AppDelegate.swift */; };
 		C9A0052B23BF8AE4004D3234 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0052A23BF8AE4004D3234 /* SceneDelegate.swift */; };
 		C9A0052D23BF8AE4004D3234 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0052C23BF8AE4004D3234 /* AppView.swift */; };
@@ -19,8 +31,13 @@
 		C9A0054B23BF8AE6004D3234 /* VegieMatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0054A23BF8AE6004D3234 /* VegieMatoUITests.swift */; };
 		C9A0055A23BF9227004D3234 /* TitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0055923BF9227004D3234 /* TitleBar.swift */; };
 		C9A0055C23BF95C0004D3234 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0055B23BF95C0004D3234 /* HomeView.swift */; };
-		C9B0DF9823C4F5C7003148A4 /* VendorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0DF9723C4F5C7003148A4 /* VendorInfo.swift */; };
 		C9B0DF9B23C4F6AE003148A4 /* VendorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */; };
+		C9DA520523DDED4B00472ED0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DA520423DDED4B00472ED0 /* GoogleService-Info.plist */; };
+		C9DA520623DDED4B00472ED0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DA520423DDED4B00472ED0 /* GoogleService-Info.plist */; };
+		C9DA520723DDED4B00472ED0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9DA520423DDED4B00472ED0 /* GoogleService-Info.plist */; };
+		C9DA520923DDF10300472ED0 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA520823DDF10300472ED0 /* Vendor.swift */; };
+		C9DA520A23DDF10300472ED0 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA520823DDF10300472ED0 /* Vendor.swift */; };
+		C9DA520B23DDF10300472ED0 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DA520823DDF10300472ED0 /* Vendor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +58,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B17A0D094FBDBAD5F71BE36 /* Pods-VegieMatoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMatoTests.release.xcconfig"; path = "Target Support Files/Pods-VegieMatoTests/Pods-VegieMatoTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F49546271B6F5C25E61601C /* Pods-VegieMato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMato.release.xcconfig"; path = "Target Support Files/Pods-VegieMato/Pods-VegieMato.release.xcconfig"; sourceTree = "<group>"; };
+		2EFE785373099A2ED4BED698 /* Pods-VegieMato-VegieMatoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMato-VegieMatoUITests.release.xcconfig"; path = "Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3C547EAA2F3616E5C6452A6E /* Pods_VegieMato_VegieMatoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VegieMato_VegieMatoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA2B772F1EF0BE9A9FDE104 /* Pods_VegieMatoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VegieMatoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8651904D8D43FAE39C1EBD86 /* Pods-VegieMatoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMatoTests.debug.xcconfig"; path = "Target Support Files/Pods-VegieMatoTests/Pods-VegieMatoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		90222CC83156D33454491EBC /* Pods-VegieMato-VegieMatoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMato-VegieMatoUITests.debug.xcconfig"; path = "Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC12AD36F9D1DF38872D9912 /* Pods_VegieMato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VegieMato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C900508423BF9D4700C4005C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		C900508623BFA0B900C4005C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		C97E24DE23DC8CA900313417 /* VendorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorView.swift; sourceTree = "<group>"; };
+		C97E24E223DC8D3100313417 /* VendorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorInfo.swift; sourceTree = "<group>"; };
+		C97E24E623DC8E7E00313417 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		C9A0052523BF8AE4004D3234 /* VegieMato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VegieMato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A0052823BF8AE4004D3234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A0052A23BF8AE4004D3234 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,8 +87,10 @@
 		C9A0054C23BF8AE6004D3234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9A0055923BF9227004D3234 /* TitleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBar.swift; sourceTree = "<group>"; };
 		C9A0055B23BF95C0004D3234 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		C9B0DF9723C4F5C7003148A4 /* VendorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorInfo.swift; sourceTree = "<group>"; };
 		C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorRow.swift; sourceTree = "<group>"; };
+		C9DA520423DDED4B00472ED0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C9DA520823DDF10300472ED0 /* Vendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendor.swift; sourceTree = "<group>"; };
+		E0FB62571B5969B44A9AAC51 /* Pods-VegieMato.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMato.debug.xcconfig"; path = "Target Support Files/Pods-VegieMato/Pods-VegieMato.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD8CBA7402919F5345B8D0D /* Pods_VegieMato.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74511A3F1A9F6CB1969BDE7A /* Pods_VegieMatoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +114,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E57020C0A06DCBA246233C /* Pods_VegieMato_VegieMatoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A247873F2D0FC5744AC4295B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC12AD36F9D1DF38872D9912 /* Pods_VegieMato.framework */,
+				3C547EAA2F3616E5C6452A6E /* Pods_VegieMato_VegieMatoUITests.framework */,
+				3DA2B772F1EF0BE9A9FDE104 /* Pods_VegieMatoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C900508323BF9D0A00C4005C /* TabViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +148,8 @@
 				C9A0053E23BF8AE6004D3234 /* VegieMatoTests */,
 				C9A0054923BF8AE6004D3234 /* VegieMatoUITests */,
 				C9A0052623BF8AE4004D3234 /* Products */,
+				DEF3F56FC4A6360CBA1D3B67 /* Pods */,
+				A247873F2D0FC5744AC4295B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +175,7 @@
 				C9A0052E23BF8AE6004D3234 /* Assets.xcassets */,
 				C9A0053323BF8AE6004D3234 /* LaunchScreen.storyboard */,
 				C9A0053623BF8AE6004D3234 /* Info.plist */,
+				C9DA520423DDED4B00472ED0 /* GoogleService-Info.plist */,
 				C9A0053023BF8AE6004D3234 /* Preview Content */,
 			);
 			path = VegieMato;
@@ -165,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				C9A0055923BF9227004D3234 /* TitleBar.swift */,
+				C97E24E623DC8E7E00313417 /* ImageView.swift */,
 			);
 			path = SupportingViews;
 			sourceTree = "<group>";
@@ -172,10 +219,25 @@
 		C9B0DF9923C4F65E003148A4 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
-				C9B0DF9723C4F5C7003148A4 /* VendorInfo.swift */,
+				C9DA520823DDF10300472ED0 /* Vendor.swift */,
+				C97E24E223DC8D3100313417 /* VendorInfo.swift */,
 				C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */,
+				C97E24DE23DC8CA900313417 /* VendorView.swift */,
 			);
 			path = Vendor;
+			sourceTree = "<group>";
+		};
+		DEF3F56FC4A6360CBA1D3B67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0FB62571B5969B44A9AAC51 /* Pods-VegieMato.debug.xcconfig */,
+				1F49546271B6F5C25E61601C /* Pods-VegieMato.release.xcconfig */,
+				90222CC83156D33454491EBC /* Pods-VegieMato-VegieMatoUITests.debug.xcconfig */,
+				2EFE785373099A2ED4BED698 /* Pods-VegieMato-VegieMatoUITests.release.xcconfig */,
+				8651904D8D43FAE39C1EBD86 /* Pods-VegieMatoTests.debug.xcconfig */,
+				1B17A0D094FBDBAD5F71BE36 /* Pods-VegieMatoTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9A0054F23BF8AE6004D3234 /* Build configuration list for PBXNativeTarget "VegieMato" */;
 			buildPhases = (
+				2BF22149D42B2B191CDA1209 /* [CP] Check Pods Manifest.lock */,
 				C9A0052123BF8AE4004D3234 /* Sources */,
 				C9A0052223BF8AE4004D3234 /* Frameworks */,
 				C9A0052323BF8AE4004D3234 /* Resources */,
+				A771649A1BA87BED92D2C953 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -202,6 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9A0055223BF8AE6004D3234 /* Build configuration list for PBXNativeTarget "VegieMatoTests" */;
 			buildPhases = (
+				653168F91C437BABB447C143 /* [CP] Check Pods Manifest.lock */,
 				C9A0053723BF8AE6004D3234 /* Sources */,
 				C9A0053823BF8AE6004D3234 /* Frameworks */,
 				C9A0053923BF8AE6004D3234 /* Resources */,
@@ -220,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9A0055523BF8AE6004D3234 /* Build configuration list for PBXNativeTarget "VegieMatoUITests" */;
 			buildPhases = (
+				54C736F8D96E010DFEFC3EF7 /* [CP] Check Pods Manifest.lock */,
 				C9A0054223BF8AE6004D3234 /* Sources */,
 				C9A0054323BF8AE6004D3234 /* Frameworks */,
 				C9A0054423BF8AE6004D3234 /* Resources */,
+				72B75C288ECCA1EB17775F10 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -283,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A0053523BF8AE6004D3234 /* LaunchScreen.storyboard in Resources */,
+				C9DA520523DDED4B00472ED0 /* GoogleService-Info.plist in Resources */,
 				C9A0053223BF8AE6004D3234 /* Preview Assets.xcassets in Resources */,
 				C9A0052F23BF8AE6004D3234 /* Assets.xcassets in Resources */,
 			);
@@ -292,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DA520623DDED4B00472ED0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,23 +368,130 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DA520723DDED4B00472ED0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BF22149D42B2B191CDA1209 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VegieMato-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54C736F8D96E010DFEFC3EF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VegieMato-VegieMatoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		653168F91C437BABB447C143 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VegieMatoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72B75C288ECCA1EB17775F10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A771649A1BA87BED92D2C953 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegieMato/Pods-VegieMato-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegieMato/Pods-VegieMato-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VegieMato/Pods-VegieMato-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9A0052123BF8AE4004D3234 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97E24DF23DC8CA900313417 /* VendorView.swift in Sources */,
 				C9B0DF9B23C4F6AE003148A4 /* VendorRow.swift in Sources */,
+				C97E24E723DC8E7E00313417 /* ImageView.swift in Sources */,
 				C9A0055A23BF9227004D3234 /* TitleBar.swift in Sources */,
 				C9A0052923BF8AE4004D3234 /* AppDelegate.swift in Sources */,
 				C9A0052B23BF8AE4004D3234 /* SceneDelegate.swift in Sources */,
 				C9A0055C23BF95C0004D3234 /* HomeView.swift in Sources */,
 				C900508523BF9D4700C4005C /* SearchView.swift in Sources */,
-				C9B0DF9823C4F5C7003148A4 /* VendorInfo.swift in Sources */,
+				C97E24E323DC8D3100313417 /* VendorInfo.swift in Sources */,
+				C9DA520923DDF10300472ED0 /* Vendor.swift in Sources */,
 				C900508723BFA0B900C4005C /* ProfileView.swift in Sources */,
 				C9A0052D23BF8AE4004D3234 /* AppView.swift in Sources */,
 			);
@@ -325,7 +501,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97E24E023DC8CA900313417 /* VendorView.swift in Sources */,
 				C9A0054023BF8AE6004D3234 /* VegieMatoTests.swift in Sources */,
+				C9DA520A23DDF10300472ED0 /* Vendor.swift in Sources */,
+				C97E24E823DC8E7E00313417 /* ImageView.swift in Sources */,
+				C97E24E423DC8D3100313417 /* VendorInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +513,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97E24E123DC8CA900313417 /* VendorView.swift in Sources */,
 				C9A0054B23BF8AE6004D3234 /* VegieMatoUITests.swift in Sources */,
+				C9DA520B23DDF10300472ED0 /* Vendor.swift in Sources */,
+				C97E24E923DC8E7E00313417 /* ImageView.swift in Sources */,
+				C97E24E523DC8D3100313417 /* VendorInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +664,7 @@
 		};
 		C9A0055023BF8AE6004D3234 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FB62571B5969B44A9AAC51 /* Pods-VegieMato.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -487,12 +672,14 @@
 				DEVELOPMENT_TEAM = U29V6K83J6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VegieMato/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mysterycoder456.VegieMato;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mysterycoder456.VegieMato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -500,6 +687,7 @@
 		};
 		C9A0055123BF8AE6004D3234 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F49546271B6F5C25E61601C /* Pods-VegieMato.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -507,12 +695,14 @@
 				DEVELOPMENT_TEAM = U29V6K83J6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = VegieMato/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mysterycoder456.VegieMato;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mysterycoder456.VegieMato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -520,6 +710,7 @@
 		};
 		C9A0055323BF8AE6004D3234 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8651904D8D43FAE39C1EBD86 /* Pods-VegieMatoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -542,6 +733,7 @@
 		};
 		C9A0055423BF8AE6004D3234 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B17A0D094FBDBAD5F71BE36 /* Pods-VegieMatoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -564,6 +756,7 @@
 		};
 		C9A0055623BF8AE6004D3234 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90222CC83156D33454491EBC /* Pods-VegieMato-VegieMatoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -584,6 +777,7 @@
 		};
 		C9A0055723BF8AE6004D3234 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EFE785373099A2ED4BED698 /* Pods-VegieMato-VegieMatoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

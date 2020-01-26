@@ -24,9 +24,9 @@ struct AppView: View {
 			}
 					
 			ProfileView()
-			.tabItem {
-				Image(systemName: "person.fill")
-				Text("Profile")
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("Profile")
 			}
 		}
 	}

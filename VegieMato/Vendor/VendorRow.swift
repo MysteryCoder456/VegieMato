@@ -13,9 +13,7 @@ struct VendorRow: View {
 	
     var body: some View {
 		HStack {
-			Image(vendor.imageName)
-				.resizable()
-				.frame(width: 70, height: 70)
+            ImageView(imageName: vendor.imageName, width: 80, height: 80)
 			
 			VStack {
 				Text(vendor.name)
@@ -24,7 +22,8 @@ struct VendorRow: View {
 				Text(vendor.tagline)
 					.font(.caption)
 			}
-			
+            .padding(.leading)
+            
 			Spacer()
 		}
     }
@@ -33,6 +32,6 @@ struct VendorRow: View {
 struct VendorRow_Previews: PreviewProvider {
     static var previews: some View {
 		VendorRow(vendor: defaultVendor)
-			.previewLayout(.fixed(width: 300, height: 80))
+			.previewLayout(.fixed(width: 350, height: 100))
     }
 }
