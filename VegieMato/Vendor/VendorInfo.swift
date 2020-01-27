@@ -15,3 +15,9 @@ var vendors = [
     Vendor(name: "Potatoes R Us", tagline: "Epic Potatoes!", imageName: "potato"),
     Vendor(name: "Tomato Centre", tagline: "Epic Tomatoes!", imageName: "tomato")
 ]
+
+struct Vendor: Hashable {
+    var name: String
+    var tagline: String
+    var imageName: String
+}
