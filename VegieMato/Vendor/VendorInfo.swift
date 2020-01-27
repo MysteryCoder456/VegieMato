@@ -8,16 +8,10 @@
 
 import Foundation
 
-var defaultVendor = Vendor(name: "Vendor Name", tagline: "Vendor Tagline", imageName: "vendor")
+var defaultVendor = Vendor(name: "Vendor", tagline: "Vendor Tagline", imageName: "vendor")
 
 var vendors = [
     Vendor(name: "Carrots For Less", tagline: "Epic Carrots!", imageName: "carrot"),
     Vendor(name: "Potatoes R Us", tagline: "Epic Potatoes!", imageName: "potato"),
     Vendor(name: "Tomato Centre", tagline: "Epic Tomatoes!", imageName: "tomato")
 ]
-
-struct Vendor: Hashable {
-    var name: String
-    var tagline: String
-    var imageName: String
-}

@@ -14,6 +14,14 @@ struct VendorView: View {
     var body: some View {
         VStack {
             ImageView(imageName: vendor.imageName, width: 200, height: 200)
+            
+            Text(vendor.name)
+                .font(.largeTitle)
+                .fontWeight(.heavy)
+                .padding(.top, 20.0)
+            
+            Text(vendor.tagline)
+            
             Spacer()
         }
     }
