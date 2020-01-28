@@ -12,17 +12,27 @@ struct VendorView: View {
     var vendor: Vendor
     
     var body: some View {
-        VStack {
-            ImageView(imageName: vendor.imageName, width: 200, height: 200)
-            
-            Text(vendor.name)
-                .font(.largeTitle)
-                .fontWeight(.heavy)
-                .padding(.top, 20.0)
-            
-            Text(vendor.tagline)
-            
-            Spacer()
+        List {
+            HStack {
+                Spacer()
+                
+                VStack() {
+                    ImageView(imageName: vendor.imageName, width: 200, height: 200)
+                    
+                    Text(vendor.name)
+                        .font(.system(size: 60))
+                        .fontWeight(.heavy)
+                        .padding(.vertical, 20.0)
+                        .multilineTextAlignment(.center)
+                    
+                    Text(vendor.tagline)
+                        .font(.headline)
+                    
+                    Spacer()
+                }
+                
+                Spacer()
+            }
         }
     }
 }
