@@ -9,13 +9,11 @@
 import Foundation
 
 
-struct Vendor: Hashable {
-    static func == (lhs: Vendor, rhs: Vendor) -> Bool {
-        return lhs.name == rhs.name && lhs.tagline == rhs.tagline && lhs.imageName == lhs.imageName && lhs.products == rhs.products
-    }
+struct Vendor: Identifiable {
+    var id = UUID()
     
     var name: String
     var tagline: String
     var imageName: String
-    var products: Array<String>
+    var products: Array<Product>
 }

@@ -14,7 +14,7 @@ struct HomeView: View {
 			TitleBar(content: "VegieMato", color: Color.green, size: 55)
 			
 			NavigationView {
-				List(vendors, id: \.self) { vendor in
+				List(vendors) { vendor in
                     NavigationLink(destination: VendorView(vendor: vendor)) {
                         VendorRow(vendor: vendor)
                     }

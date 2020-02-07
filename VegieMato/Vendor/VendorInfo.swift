@@ -8,12 +8,23 @@
 
 import Foundation
 
-var defaultVendor = Vendor(name: "Vendor", tagline: "Vendor Tagline", imageName: "vendor", products: ["none"])
+var defaultProducts = [Product(name: "Product 1", price: 100), Product(name: "Product 2", price: 200)]
+var defaultVendor = Vendor(name: "Vendor", tagline: "Vendor Tagline", imageName: "vendor", products: defaultProducts)
 
-var products = [
-    "carrotsForLess": ["none"],
-    "potatoesRUs": ["none"],
-    "tomatoCentre": ["none"]
+var products: [String:Array<Product>] = [
+    "carrotsForLess": [
+        Product(name: "Carrot", price: 49),
+        Product(name: "Carrot Cake", price: 400)
+    ],
+    
+    "potatoesRUs": [
+        Product(name: "Potato", price: 37)
+    ],
+    
+    "tomatoCentre": [
+        Product(name: "Tomato", price: 24),
+        Product(name: "Tomato Soup", price: 49)
+    ]
 ]
 
 var vendors = [
