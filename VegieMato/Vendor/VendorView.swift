@@ -33,6 +33,13 @@ struct VendorView: View {
                 
                 Spacer()
             }
+            
+            List(vendor.products) { product in
+                VStack {
+                    ProductRow(product: product)
+                    Spacer()
+                }
+            }
         }
     }
 }

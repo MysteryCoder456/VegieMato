@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct Product: Equatable {
+struct Product: Equatable, Identifiable {
+    var id = UUID()
+    
     var name: String
     var price: Int // Price in Indian Rupees per Kilogram
 }
