@@ -13,16 +13,16 @@ var defaultVendor = Vendor(name: "Vendor", tagline: "Vendor Tagline", imageName:
 
 var products: [String:Array<Product>] = [
     "carrotsForLess": [
-        Product(name: "Carrot", price: 49),
+        Product(name: "Carrot (Per Kg)", price: 49),
         Product(name: "Carrot Cake", price: 400)
     ],
     
     "potatoesRUs": [
-        Product(name: "Potato", price: 37)
+        Product(name: "Potato (Per Kg)", price: 37)
     ],
     
     "tomatoCentre": [
-        Product(name: "Tomato", price: 24),
+        Product(name: "Tomato (Per Kg)", price: 24),
         Product(name: "Tomato Soup", price: 49)
     ]
 ]
