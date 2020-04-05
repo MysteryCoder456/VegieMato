@@ -9,8 +9,22 @@
 import SwiftUI
 
 struct SearchView: View {
+    @State private var searchText: String = ""
+    
     var body: some View {
-        Text("Coming Soon!")
+        NavigationView {
+            VStack {
+                SearchBar(text: $searchText)
+                List(vendors.filter {
+                    searchText.isEmpty ? true : $0.name.contains(searchText)
+                }) { vendor in
+                    NavigationLink(destination: VendorView(vendor: vendor)) {
+                        VendorRow(vendor: vendor)
+                    }
+                }
+                .navigationBarTitle(Text("Vendors"))
+            }
+        }
     }
 }
 
