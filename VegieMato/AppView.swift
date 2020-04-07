@@ -23,7 +23,7 @@ struct AppView: View {
 					Text("Search")
 			}
 					
-			OtherView()
+			OtherView(user: exampleUser)
                 .tabItem {
                     Image(systemName: "tray.fill")
                     Text("Other")

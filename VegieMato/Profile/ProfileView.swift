@@ -29,7 +29,7 @@ struct ProfileView: View {
             
             Spacer()
         }
-        .padding(.bottom, -22.0)
+        .padding(.top, -25.0)
     }
 }
 

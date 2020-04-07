@@ -9,14 +9,18 @@
 import SwiftUI
 
 struct OtherView: View {
+    var user: User
+    
     var body: some View {
         NavigationView {
             VStack {
                 List {
-//                    NavigationLink(destination: ProfileView())
-                    Text("hi")
+                    NavigationLink(destination: ProfileView(user: exampleUser)) {
+                        Text("Account")
+                    }
                 }
                 .navigationBarTitle(Text("Profile"))
+                .environment(\.defaultMinListRowHeight, 60)
             }
         }
     }
@@ -24,6 +28,6 @@ struct OtherView: View {
 
 struct OtherView_Previews: PreviewProvider {
     static var previews: some View {
-        OtherView()
+        OtherView(user: exampleUser)
     }
 }
