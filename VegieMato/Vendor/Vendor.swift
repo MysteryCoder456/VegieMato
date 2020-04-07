@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct Vendor: Identifiable {
     var id = UUID()
     

@@ -22,7 +22,7 @@ struct SearchView: View {
                         VendorRow(vendor: vendor)
                     }
                 }
-                .navigationBarTitle(Text("Vendors"))
+                .navigationBarTitle(Text("Search Vendors"))
             }
         }
     }

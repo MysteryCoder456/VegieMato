@@ -23,10 +23,10 @@ struct AppView: View {
 					Text("Search")
 			}
 					
-			ProfileView()
+			OtherView()
                 .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Profile")
+                    Image(systemName: "tray.fill")
+                    Text("Other")
 			}
 		}
 	}
