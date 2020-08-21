@@ -22,7 +22,7 @@ struct ProfileView: View {
                 .background(Color.black)
                 .padding(.bottom)
             
-            ImageView(imageName: user.profilePic, width: 300, height: 200)
+            ImageView(imageName: user.profilePic, width: 200, height: 200)
             
             Text(user.name)
                 .font(.title)

@@ -15,8 +15,7 @@ struct User: Identifiable {
     var email: String
     var password: String
     var profilePic: String
-    var numberOfOrders: Int = 0
-    var numberOfVendors: Int = 0
+    var ownedVendor: Array<Vendor> = []
 }
 
-var exampleUser = User(name: "Username", email: "example@example.com", password: "p@ssw0rd", profilePic: "vendor")
+var exampleUser = User(name: "Username", email: "example@example.com", password: "p@ssw0rd", profilePic: "examplePP")

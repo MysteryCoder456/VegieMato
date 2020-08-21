@@ -22,11 +22,12 @@ struct TitleBar: View {
 					.font(.system(size: size))
 					.fontWeight(.bold)
 					.foregroundColor(.white)
-					.padding(.vertical, size / 10)
+                    .padding(.top, -25)
 				
 				Spacer()
 			}
 		}
+        .frame(minHeight: 100)
 		.background(color)
     }
 }
