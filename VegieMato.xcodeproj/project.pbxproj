@@ -34,6 +34,7 @@
 		C9A0055A23BF9227004D3234 /* TitleBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0055923BF9227004D3234 /* TitleBar.swift */; };
 		C9A0055C23BF95C0004D3234 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A0055B23BF95C0004D3234 /* HomeView.swift */; };
 		C9B0DF9B23C4F6AE003148A4 /* VendorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */; };
+		C9B7A8DF24F14E2700B6DC73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9B7A8DE24F14E2700B6DC73 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		C9A0055923BF9227004D3234 /* TitleBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBar.swift; sourceTree = "<group>"; };
 		C9A0055B23BF95C0004D3234 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorRow.swift; sourceTree = "<group>"; };
+		C9B7A8DE24F14E2700B6DC73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				C9A0052E23BF8AE6004D3234 /* Assets.xcassets */,
 				C9A0053323BF8AE6004D3234 /* LaunchScreen.storyboard */,
 				C9A0053623BF8AE6004D3234 /* Info.plist */,
+				C9B7A8DE24F14E2700B6DC73 /* GoogleService-Info.plist */,
 				C9A0053023BF8AE6004D3234 /* Preview Content */,
 			);
 			path = VegieMato;
@@ -312,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9A0053523BF8AE6004D3234 /* LaunchScreen.storyboard in Resources */,
+				C9B7A8DF24F14E2700B6DC73 /* GoogleService-Info.plist in Resources */,
 				C9A0053223BF8AE6004D3234 /* Preview Assets.xcassets in Resources */,
 				C9A0052F23BF8AE6004D3234 /* Assets.xcassets in Resources */,
 			);
