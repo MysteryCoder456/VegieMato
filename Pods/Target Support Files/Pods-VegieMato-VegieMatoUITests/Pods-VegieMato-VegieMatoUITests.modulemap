@@ -1,0 +1,6 @@
+framework module Pods_VegieMato_VegieMatoUITests {
+  umbrella header "Pods-VegieMato-VegieMatoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

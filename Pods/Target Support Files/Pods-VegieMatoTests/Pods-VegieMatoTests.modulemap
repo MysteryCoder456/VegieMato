@@ -1,0 +1,6 @@
+framework module Pods_VegieMatoTests {
+  umbrella header "Pods-VegieMatoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
