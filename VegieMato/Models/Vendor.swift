@@ -14,7 +14,7 @@ struct Vendor: Identifiable {
     var name: String
     var tagline: String
     var imageName: String
-    var products: Array<Product>
+    var products: Array<Product> = []
 }
 
 

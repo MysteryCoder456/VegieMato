@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		C94986C2243A308800F8AE83 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94986C1243A308800F8AE83 /* SearchBar.swift */; };
 		C954B58B243C9E8F0063B6AA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C954B58A243C9E8F0063B6AA /* ProfileView.swift */; };
 		C954B58D243C9ECE0063B6AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C954B58C243C9ECE0063B6AA /* User.swift */; };
+		C96B1C7524F151B1007E5CD6 /* MakeVendorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B1C7424F151B1007E5CD6 /* MakeVendorView.swift */; };
 		C97D33E823DF4D6200120206 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97D33E723DF4D6200120206 /* Vendor.swift */; };
 		C97E24DF23DC8CA900313417 /* VendorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E24DE23DC8CA900313417 /* VendorView.swift */; };
 		C97E24E023DC8CA900313417 /* VendorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97E24DE23DC8CA900313417 /* VendorView.swift */; };
@@ -70,6 +71,7 @@
 		C94986C1243A308800F8AE83 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		C954B58A243C9E8F0063B6AA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C954B58C243C9ECE0063B6AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C96B1C7424F151B1007E5CD6 /* MakeVendorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeVendorView.swift; sourceTree = "<group>"; };
 		C97D33E723DF4D6200120206 /* Vendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vendor.swift; sourceTree = "<group>"; };
 		C97E24DE23DC8CA900313417 /* VendorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorView.swift; sourceTree = "<group>"; };
 		C97E24E623DC8E7E00313417 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
@@ -136,7 +138,6 @@
 				12A9D6B81E325B49D48434BE /* Pods-VegieMatoTests.debug.xcconfig */,
 				CD31DB58AB3719DC33E63C04 /* Pods-VegieMatoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,6 +245,7 @@
 				C92782A923ED2E5B0030EE59 /* ProductRow.swift */,
 				C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */,
 				C97E24DE23DC8CA900313417 /* VendorView.swift */,
+				C96B1C7424F151B1007E5CD6 /* MakeVendorView.swift */,
 				C954B58A243C9E8F0063B6AA /* ProfileView.swift */,
 				C9A0055923BF9227004D3234 /* TitleBar.swift */,
 				C97E24E623DC8E7E00313417 /* ImageView.swift */,
@@ -505,6 +507,7 @@
 				C900508523BF9D4700C4005C /* SearchView.swift in Sources */,
 				C97D33E823DF4D6200120206 /* Vendor.swift in Sources */,
 				C900508723BFA0B900C4005C /* OtherView.swift in Sources */,
+				C96B1C7524F151B1007E5CD6 /* MakeVendorView.swift in Sources */,
 				C9A0052D23BF8AE4004D3234 /* AppView.swift in Sources */,
 				C92782A523ED257A0030EE59 /* Product.swift in Sources */,
 			);

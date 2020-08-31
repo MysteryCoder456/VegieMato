@@ -18,6 +18,10 @@ struct OtherView: View {
                     NavigationLink(destination: ProfileView(user: exampleUser)) {
                         Text("Account")
                     }
+                    
+                    NavigationLink(destination: MakeVendorView()) {
+                        Text("Make a new Vendor")
+                    }
                 }
                 .navigationBarTitle(Text("Profile"))
                 .environment(\.defaultMinListRowHeight, 60)
