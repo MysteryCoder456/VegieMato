@@ -2,7 +2,7 @@
 //  MakeVendorView.swift
 //  VegieMato
 //
-//  Created by Harmeet on 08/22/2020.
+//  Created by Rehatbir Singh on 08/22/2020.
 //  Copyright © 2020 MysteryCoder456. All rights reserved.
 //
 
