@@ -36,10 +36,11 @@ struct HomeView: View {
                 
                 let names = documents.map { $0["name"]! }
                 let taglines = documents.map { $0["tagline"]! }
-        //        let products = documents.map { $0["products"]! }
+                let products = documents.map { $0["products"]! }
                 
                 print(names)
                 print(taglines)
+                print(products)
                 
                 vendors.removeAll()
                 
@@ -47,9 +48,17 @@ struct HomeView: View {
                     let uuid = UUID(uuidString: documents[i].documentID) ?? UUID()
                     let name = names[i] as? String ?? "Failed to get name"
                     let tagline = taglines[i] as? String ?? "Failed to get tagline"
-        //            let vendorProducts = taglines[i] as? Array<Product> ?? []
+                    let vendorProducts = products[i] as? Array<[String:Any]> ?? []
                     
-                    let vendor = Vendor(id: uuid, name: name, tagline: tagline)
+                    let productObjects: Array<Product> = []
+                    for prod in vendorProducts {
+                        let productName = prod["name"]
+                        let productPrice = prod["price"]
+                        let product = Product(name: productName, price: productPrice)
+                        productObjects.append(product)
+                    }
+                    
+                    let vendor = Vendor(id: uuid, name: name, tagline: tagline, products: productObjects)
                     vendors.append(vendor)
                 }
             }
