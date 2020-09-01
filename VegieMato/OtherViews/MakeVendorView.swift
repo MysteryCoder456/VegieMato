@@ -15,21 +15,31 @@ struct MakeVendorView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
-            VStack {
+            Spacer()
+            
+            Text("Start your new Vendor today!")
+                .font(.largeTitle)
+            
+            Spacer()
+            
+            VStack(alignment: .leading) {
                 Text("Enter your Vendor's name:")
-                    .frame(alignment: .leading)
                 TextField("Vendor Name", text: $newVendorName)
             }
             
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Enter your Vendor's tagline:")
-                    .frame(alignment: .leading)
                 TextField("Vendor Tagline", text: $newVendorTagline)
             }
             
+            Spacer()
+                
             Button(action: createNewVendor) {
                 Text("Create Vendor!")
+                    .font(.title)
             }
+            
+            Spacer()
         }
         .padding(.horizontal)
         
@@ -41,7 +51,7 @@ struct MakeVendorView: View {
             "tagline": self.newVendorTagline
         ]
         
-        let docRef = Firestore.firestore().document("ratings/\(UUID().uuidString)")
+        let docRef = Firestore.firestore().document("vendors/\(UUID().uuidString)")
         print("setting data")
         docRef.setData(vendorDictionary){ (error) in
             if let error = error {
