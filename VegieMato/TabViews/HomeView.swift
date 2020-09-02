@@ -50,12 +50,12 @@ struct HomeView: View {
                     let tagline = taglines[i] as? String ?? "Failed to get tagline"
                     let vendorProducts = products[i] as? Array<[String:Any]> ?? []
                     
-                    let productObjects: Array<Product> = []
+                    var productObjects: Array<Product> = []
                     for prod in vendorProducts {
-                        let productName = prod["name"]
-                        let productPrice = prod["price"]
-                        let product = Product(name: productName, price: productPrice)
-                        productObjects.append(product)
+                        if let productName = prod["name"] as? String, let productPrice = prod["price"] as? Int {
+                            let product = Product(name: productName, price: productPrice)
+                            productObjects.append(product)
+                        }
                     }
                     
                     let vendor = Vendor(id: uuid, name: name, tagline: tagline, products: productObjects)
