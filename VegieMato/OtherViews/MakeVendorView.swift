@@ -46,13 +46,9 @@ struct MakeVendorView: View {
     
     func createNewVendor() {
         let vendorRepo = VendorRepository()
-        let vendorDictionary = [
-            "name": self.newVendorName,
-            "tagline": self.newVendorTagline,
-            "products": []
-        ] as [String : Any]
-        
-        vendorRepo.setData(dataDict: vendorDictionary)
+        let vendorObject = Vendor(id: UUID().uuidString, name: self.newVendorName, tagline: self.newVendorTagline)
+
+        vendorRepo.createData(vendor: vendorObject)
         self.newVendorName = ""
         self.newVendorTagline = ""
     }

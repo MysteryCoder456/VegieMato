@@ -27,7 +27,7 @@ struct HomeView: View {
 			.padding(.top, -35)
 		}
         .onAppear() {
-            vendorRepo.loadData()
+            vendorRepo.readData()
         }
     }
 }
