@@ -8,6 +8,7 @@ target 'VegieMato' do
   # Pods for VegieMato
   # add the Firebase pod for Google Analytics
   # pod 'Firebase/Analytics'
+  pod 'FirebaseFirestoreSwift'
   pod 'Firebase/Storage'
   pod 'Firebase/Firestore'
   # add pods for any other desired Firebase products

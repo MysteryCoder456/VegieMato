@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 
 class VendorRepository: ObservableObject {
@@ -29,35 +30,18 @@ class VendorRepository: ObservableObject {
     }
     
     func loadData() {
-        db.collection("vendors")
-        .addSnapshotListener { querySnapshot, error in
-            guard let documents = querySnapshot?.documents else {
-                print("Error fetching documents: \(error!)")
-                return
-            }
-            
-            let names = documents.map { $0["name"]! }
-            let taglines = documents.map { $0["tagline"]! }
-            let products = documents.map { $0["products"]! }
-            
-            self.vendors.removeAll()
-            
-            for i in 0..<names.count {
-                let uuid = UUID(uuidString: documents[i].documentID) ?? UUID()
-                let name = names[i] as? String ?? "Failed to get name"
-                let tagline = taglines[i] as? String ?? "Failed to get tagline"
-                let vendorProducts = products[i] as? Array<[String:Any]> ?? []
-                
-                var productObjects: Array<Product> = []
-                for prod in vendorProducts {
-                    if let productName = prod["name"] as? String, let productPrice = prod["price"] as? Int {
-                        let product = Product(name: productName, price: productPrice)
-                        productObjects.append(product)
+        db.collection("vendors").addSnapshotListener { querySnapshot, error in
+            if let querySnapshot = querySnapshot {
+                self.vendors = querySnapshot.documents.compactMap { document in
+                    do {
+                        let x = try document.data(as: Vendor.self)
+                        return x
+                    } catch {
+                        print(error)
                     }
+                    
+                    return nil
                 }
-                
-                let vendor = Vendor(id: uuid, name: name, tagline: tagline, products: productObjects)
-                self.vendors.append(vendor)
             }
         }
     }

@@ -7,14 +7,22 @@
 //
 
 import Foundation
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
-struct Vendor: Identifiable {
-    var id = UUID()
-    
+struct Vendor: Identifiable, Codable {
+    @DocumentID var id: String?
     var name: String
     var tagline: String
     var imageName: String = "exampleVendorPP"
     var products: Array<Product> = []
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case tagline
+        case products
+    }
 }
 
 var defaultVendor = Vendor(name: "Vendor", tagline: "Vendor Tagline", products: defaultProducts)
