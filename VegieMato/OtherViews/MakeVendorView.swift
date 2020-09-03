@@ -46,13 +46,14 @@ struct MakeVendorView: View {
     }
     
     func createNewVendor() {
+        let vendorRepo = VendorRepository()
         let vendorDictionary = [
             "name": self.newVendorName,
             "tagline": self.newVendorTagline,
             "products": []
         ] as [String : Any]
         
-        let docRef = Firestore.firestore().document("vendors/\(UUID().uuidString)")
+        let docRef = vendorRepo.db.document("vendors/\(UUID().uuidString)")
         print("setting data")
         docRef.setData(vendorDictionary){ (error) in
             if let error = error {
