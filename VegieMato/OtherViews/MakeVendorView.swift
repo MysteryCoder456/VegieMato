@@ -15,10 +15,9 @@ struct MakeVendorView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 20) {
-            Spacer()
-            
             Text("Start your new Vendor today!")
                 .font(.largeTitle)
+                .bold()
             
             Spacer()
             

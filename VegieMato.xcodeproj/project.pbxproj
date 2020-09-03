@@ -256,8 +256,8 @@
 				C92782A923ED2E5B0030EE59 /* ProductRow.swift */,
 				C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */,
 				C97E24DE23DC8CA900313417 /* VendorView.swift */,
-				C96B1C7424F151B1007E5CD6 /* MakeVendorView.swift */,
 				C954B58A243C9E8F0063B6AA /* ProfileView.swift */,
+				C96B1C7424F151B1007E5CD6 /* MakeVendorView.swift */,
 				C9A0055923BF9227004D3234 /* TitleBar.swift */,
 				C97E24E623DC8E7E00313417 /* ImageView.swift */,
 			);

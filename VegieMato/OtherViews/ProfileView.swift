@@ -14,13 +14,8 @@ struct ProfileView: View {
     var body: some View {
         VStack(alignment: .center) {
             Text("Profile")
-                .font(.system(size: 50))
+                .font(.largeTitle)
                 .bold()
-                .padding(.bottom, -15)
-            
-            Divider()
-                .background(Color.black)
-                .padding(.bottom)
             
             ImageView(imageName: user.profilePic, width: 200, height: 200)
             
