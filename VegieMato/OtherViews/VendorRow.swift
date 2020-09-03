@@ -15,14 +15,17 @@ struct VendorRow: View {
 		HStack {
             ImageView(imageName: vendor.imageName, width: 80, height: 80)
 			
+            Spacer()
+            
 			VStack {
 				Text(vendor.name)
 					.font(.headline)
-				
+                    .multilineTextAlignment(.center)
+
 				Text(vendor.tagline)
 					.font(.caption)
+                    .multilineTextAlignment(.center)
 			}
-            .padding(.leading)
             
 			Spacer()
 		}
