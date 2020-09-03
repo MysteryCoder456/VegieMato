@@ -52,17 +52,9 @@ struct MakeVendorView: View {
             "products": []
         ] as [String : Any]
         
-        let docRef = vendorRepo.db.document("vendors/\(UUID().uuidString)")
-        print("setting data")
-        docRef.setData(vendorDictionary){ (error) in
-            if let error = error {
-                print("error = \(error)")
-            } else {
-                print("data uploaded successfully")
-                self.newVendorName = ""
-                self.newVendorTagline = ""
-            }
-        }
+        vendorRepo.setData(dataDict: vendorDictionary)
+        self.newVendorName = ""
+        self.newVendorTagline = ""
     }
 }
 

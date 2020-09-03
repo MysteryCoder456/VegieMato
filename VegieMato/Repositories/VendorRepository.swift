@@ -15,6 +15,19 @@ class VendorRepository: ObservableObject {
     
     @Published var vendors: Array<Vendor> = []
     
+    func setData(dataDict: [String:Any]) {
+        let docRef = self.db.document("vendors/\(UUID().uuidString)")
+        print("setting data")
+        
+        docRef.setData(dataDict) {error in
+            if let error = error {
+                print("error = \(error)")
+            } else {
+                print("data uploaded successfully")
+            }
+        }
+    }
+    
     func loadData() {
         db.collection("vendors")
         .addSnapshotListener { querySnapshot, error in
