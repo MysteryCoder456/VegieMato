@@ -38,7 +38,7 @@ struct OtherView: View {
                         }
                     }
                 }
-                .navigationBarTitle(Text("Profile"))
+                .navigationBarTitle(Text("Others"))
                 .environment(\.defaultMinListRowHeight, 60)
             }
         }
