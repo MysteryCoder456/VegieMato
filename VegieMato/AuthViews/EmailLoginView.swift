@@ -21,7 +21,7 @@ struct EmailLoginView: View {
                     .font(.largeTitle)
                     .bold()
                 
-                Text("You must login to be able to start a vendor or modify your existing ones")
+                Text("You must Login to be able to start a vendor or modify your existing ones. If you don't have an account, go to the Sign Up Page.")
                     .multilineTextAlignment(.center)
             }
             
