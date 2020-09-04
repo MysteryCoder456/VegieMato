@@ -11,6 +11,7 @@ import Firebase
 
 struct ProfileView: View {
     var user: User?
+    @ObservedObject var vendorRepo = VendorRepository()
     
     var body: some View {
         VStack(alignment: .center) {
@@ -23,9 +24,21 @@ struct ProfileView: View {
             Text(user?.displayName ?? "No Username Provided")
                 .font(.title)
             
-            Spacer()
+            Divider()
+            
+            NavigationView {
+                List(vendorRepo.userOwnedVendors) { vendor in
+                    NavigationLink(destination: VendorView(vendor: vendor)) {
+                        VendorRow(vendor: vendor)
+                    }
+                }
+                .navigationBarTitle(Text("Vendors Owned by You"), displayMode: .inline)
+            }
         }
         .padding(.top, -25.0)
+        .onAppear() {
+            vendorRepo.readUserOwnedVendors()
+        }
     }
 }
 

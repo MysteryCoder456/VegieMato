@@ -48,12 +48,14 @@ struct MakeVendorView: View {
     }
     
     func createNewVendor() {
-        let vendorRepo = VendorRepository()
-        let vendorObject = Vendor(id: UUID().uuidString, name: self.newVendorName, tagline: self.newVendorTagline)
+        if let currentUserID = Auth.auth().currentUser?.uid {
+            let vendorRepo = VendorRepository()
+            let vendorObject = Vendor(id: UUID().uuidString, name: self.newVendorName, tagline: self.newVendorTagline, ownerID: currentUserID)
 
-        vendorRepo.createVendor(vendor: vendorObject)
-        self.newVendorName = ""
-        self.newVendorTagline = ""
+            vendorRepo.createVendor(vendor: vendorObject)
+            self.newVendorName = ""
+            self.newVendorTagline = ""
+        }
     }
 }
 
