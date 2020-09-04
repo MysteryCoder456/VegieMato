@@ -10,15 +10,15 @@ import SwiftUI
 
 struct OtherView: View {
     var user: User
-    
+
     var body: some View {
         NavigationView {
             VStack {
                 List {
                     NavigationLink(destination: ProfileView(user: exampleUser)) {
-                        Text("Account")
+                        Text("Profile")
                     }
-                    
+
                     NavigationLink(destination: MakeVendorView()) {
                         Text("Make a new Vendor")
                     }

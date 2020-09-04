@@ -13,18 +13,22 @@ import FirebaseFirestoreSwift
 
 class VendorRepository: ObservableObject {
     let db = Firestore.firestore()
-    
+
     @Published var vendors: Array<Vendor> = []
     
-    func createData(vendor: Vendor) {
+    init() {
+        readVendors()
+    }
+
+    func createVendor(vendor: Vendor) {
         do {
             let _ = try db.collection("vendors").addDocument(from: vendor)
         } catch {
             print(error)
         }
     }
-    
-    func readData() {
+
+    func readVendors() {
         db.collection("vendors").addSnapshotListener { querySnapshot, error in
             if let querySnapshot = querySnapshot {
                 self.vendors = querySnapshot.documents.compactMap { document in
@@ -34,7 +38,7 @@ class VendorRepository: ObservableObject {
                     } catch {
                         print(error)
                     }
-                    
+
                     return nil
                 }
             }

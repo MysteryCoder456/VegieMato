@@ -29,7 +29,7 @@ struct SearchView: View {
         }
         
         .onAppear() {
-            vendorRepo.readData()
+            vendorRepo.readVendors()
         }
     }
 }

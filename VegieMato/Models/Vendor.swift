@@ -16,12 +16,14 @@ struct Vendor: Identifiable, Codable {
     var tagline: String
     var imageName: String = "exampleVendorPP"
     var products: Array<Product> = []
+    var ownerID: String?
     
     enum CodingKeys: String, CodingKey {
         case id
         case name
         case tagline
         case products
+        case ownerID
     }
 }
 

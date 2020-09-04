@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340C4AF32502957300E0E923 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340C4AF22502957300E0E923 /* UserRepository.swift */; };
 		34B0D86A2500D0580054E67F /* VendorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0D8692500D0580054E67F /* VendorRepository.swift */; };
+		34CF25D62502CC5C00CA0922 /* VendorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */; };
+		34CF25D72502CC5C00CA0922 /* VendorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */; };
 		64135F021B00D103F385F22B /* Pods_VegieMato_VegieMatoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E756A235D54CE1A1B71934A9 /* Pods_VegieMato_VegieMatoUITests.framework */; };
 		6ECA334FEB03FE8B784E5FB9 /* Pods_VegieMatoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA67D4A13BFE2A4F8FC2C92 /* Pods_VegieMatoTests.framework */; };
 		B3F6941CD18A039FD0287002 /* Pods_VegieMato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2D6D15239622C5EB6AC443 /* Pods_VegieMato.framework */; };
@@ -62,6 +65,7 @@
 /* Begin PBXFileReference section */
 		12A9D6B81E325B49D48434BE /* Pods-VegieMatoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMatoTests.debug.xcconfig"; path = "Target Support Files/Pods-VegieMatoTests/Pods-VegieMatoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		299873E0A09B220856FAD44B /* Pods-VegieMato-VegieMatoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMato-VegieMatoUITests.release.xcconfig"; path = "Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		340C4AF22502957300E0E923 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		34B0D8692500D0580054E67F /* VendorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorRepository.swift; sourceTree = "<group>"; };
 		6DA39ED77F28B6C877461138 /* Pods-VegieMato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMato.release.xcconfig"; path = "Target Support Files/Pods-VegieMato/Pods-VegieMato.release.xcconfig"; sourceTree = "<group>"; };
 		9BBFDEEF308C453FE18D2F33 /* Pods-VegieMato-VegieMatoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMato-VegieMatoUITests.debug.xcconfig"; path = "Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,8 +138,18 @@
 			isa = PBXGroup;
 			children = (
 				34B0D8692500D0580054E67F /* VendorRepository.swift */,
+				340C4AF22502957300E0E923 /* UserRepository.swift */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		34CF25D52502CC4E00CA0922 /* RowViews */ = {
+			isa = PBXGroup;
+			children = (
+				C92782A923ED2E5B0030EE59 /* ProductRow.swift */,
+				C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */,
+			);
+			path = RowViews;
 			sourceTree = "<group>";
 		};
 		394809EAF28672B6D74A6A7D /* Pods */ = {
@@ -213,6 +227,7 @@
 				C94986C1243A308800F8AE83 /* SearchBar.swift */,
 				C900508323BF9D0A00C4005C /* TabViews */,
 				C9A0055823BF91FD004D3234 /* OtherViews */,
+				34CF25D52502CC4E00CA0922 /* RowViews */,
 				C947D97524F038AB001006E4 /* Models */,
 				34B0D8682500D0360054E67F /* Repositories */,
 				C9A0052E23BF8AE6004D3234 /* Assets.xcassets */,
@@ -253,8 +268,6 @@
 		C9A0055823BF91FD004D3234 /* OtherViews */ = {
 			isa = PBXGroup;
 			children = (
-				C92782A923ED2E5B0030EE59 /* ProductRow.swift */,
-				C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */,
 				C97E24DE23DC8CA900313417 /* VendorView.swift */,
 				C954B58A243C9E8F0063B6AA /* ProfileView.swift */,
 				C96B1C7424F151B1007E5CD6 /* MakeVendorView.swift */,
@@ -521,6 +534,7 @@
 				C900508723BFA0B900C4005C /* OtherView.swift in Sources */,
 				C96B1C7524F151B1007E5CD6 /* MakeVendorView.swift in Sources */,
 				C9A0052D23BF8AE4004D3234 /* AppView.swift in Sources */,
+				340C4AF32502957300E0E923 /* UserRepository.swift in Sources */,
 				C92782A523ED257A0030EE59 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +547,7 @@
 				C9A0054023BF8AE6004D3234 /* VegieMatoTests.swift in Sources */,
 				C97E24E823DC8E7E00313417 /* ImageView.swift in Sources */,
 				C92782AB23ED2E5B0030EE59 /* ProductRow.swift in Sources */,
+				34CF25D62502CC5C00CA0922 /* VendorRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +559,7 @@
 				C9A0054B23BF8AE6004D3234 /* VegieMatoUITests.swift in Sources */,
 				C97E24E923DC8E7E00313417 /* ImageView.swift in Sources */,
 				C92782AC23ED2E5B0030EE59 /* ProductRow.swift in Sources */,
+				34CF25D72502CC5C00CA0922 /* VendorRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

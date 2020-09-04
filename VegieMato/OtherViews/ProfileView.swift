@@ -17,7 +17,7 @@ struct ProfileView: View {
                 .font(.largeTitle)
                 .bold()
             
-            ImageView(imageName: user.profilePic, width: 200, height: 200)
+            ImageView(imageName: "examplePP", width: 200, height: 200)
             
             Text(user.name)
                 .font(.title)

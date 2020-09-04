@@ -48,7 +48,7 @@ struct MakeVendorView: View {
         let vendorRepo = VendorRepository()
         let vendorObject = Vendor(id: UUID().uuidString, name: self.newVendorName, tagline: self.newVendorTagline)
 
-        vendorRepo.createData(vendor: vendorObject)
+        vendorRepo.createVendor(vendor: vendorObject)
         self.newVendorName = ""
         self.newVendorTagline = ""
     }
