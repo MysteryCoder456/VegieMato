@@ -22,6 +22,14 @@ struct OtherView: View {
                     NavigationLink(destination: MakeVendorView()) {
                         Text("Make a new Vendor")
                     }
+                    
+                    NavigationLink(destination: EmailLoginView()) {
+                        Text("Login with your Email")
+                    }
+                    
+                    NavigationLink(destination: EmailSignUpView()) {
+                        Text("Sign Up with your Email")
+                    }
                 }
                 .navigationBarTitle(Text("Profile"))
                 .environment(\.defaultMinListRowHeight, 60)

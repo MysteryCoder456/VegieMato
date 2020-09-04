@@ -18,17 +18,20 @@ struct MakeVendorView: View {
             Text("Start your new Vendor today!")
                 .font(.largeTitle)
                 .bold()
+                .multilineTextAlignment(.center)
             
             Spacer()
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .center) {
                 Text("Enter your Vendor's name:")
                 TextField("Vendor Name", text: $newVendorName)
+                .multilineTextAlignment(.center)
             }
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .center) {
                 Text("Enter your Vendor's tagline:")
                 TextField("Vendor Tagline", text: $newVendorTagline)
+                .multilineTextAlignment(.center)
             }
             
             Spacer()
