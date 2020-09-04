@@ -16,11 +16,11 @@ struct OtherView: View {
         NavigationView {
             VStack {
                 List {
-                    NavigationLink(destination: ProfileView(user: currentUser)) {
-                        Text("Profile")
-                    }
-
                     if currentUser != nil {
+                        NavigationLink(destination: ProfileView(user: currentUser)) {
+                            Text("Profile")
+                        }
+                        
                         NavigationLink(destination: MakeVendorView()) {
                             Text("Make a new Vendor")
                         }
