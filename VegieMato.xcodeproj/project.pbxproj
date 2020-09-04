@@ -276,6 +276,7 @@
 				C9A0052223BF8AE4004D3234 /* Frameworks */,
 				C9A0052323BF8AE4004D3234 /* Resources */,
 				ED8BC31E8E97F45B4FEC1AAA /* [CP] Embed Pods Frameworks */,
+				48EF83A445C6329F9F17A4A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,6 +315,7 @@
 				C9A0054323BF8AE6004D3234 /* Frameworks */,
 				C9A0054423BF8AE6004D3234 /* Resources */,
 				4666BB912DC89CE731626C6E /* [CP] Embed Pods Frameworks */,
+				2881061D09A9B5C05D45D7D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -419,6 +421,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2881061D09A9B5C05D45D7D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3F39102090550B97C171571E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,6 +475,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48EF83A445C6329F9F17A4A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegieMato/Pods-VegieMato-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegieMato/Pods-VegieMato-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VegieMato/Pods-VegieMato-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E79F952562FD941954D6AF9D /* [CP] Check Pods Manifest.lock */ = {
