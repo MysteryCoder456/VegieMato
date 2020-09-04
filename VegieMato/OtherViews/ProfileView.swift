@@ -7,9 +7,10 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ProfileView: View {
-    var user: User
+    var user: User?
     
     var body: some View {
         VStack(alignment: .center) {
@@ -19,7 +20,7 @@ struct ProfileView: View {
             
             ImageView(imageName: "examplePP", width: 200, height: 200)
             
-            Text(user.name)
+            Text(user?.displayName ?? "No Username Provided")
                 .font(.title)
             
             Spacer()
@@ -30,6 +31,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(user: exampleUser)
+        ProfileView()
     }
 }
