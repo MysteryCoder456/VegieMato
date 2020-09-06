@@ -23,14 +23,10 @@ struct ProfileView: View {
             
             Text(user?.displayName ?? "No Username Provided")
                 .font(.title)
-            
-            Divider()
-            
+             
             NavigationView {
                 List(vendorRepo.userOwnedVendors) { vendor in
-                    NavigationLink(destination: VendorView(vendor: vendor)) {
-                        VendorRow(vendor: vendor)
-                    }
+                    VendorRow(vendor: vendor)
                 }
                 .navigationBarTitle(Text("Vendors Owned by You"), displayMode: .inline)
             }
