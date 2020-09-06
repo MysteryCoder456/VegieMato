@@ -78,9 +78,6 @@ struct EmailSignUpView: View {
                 print("\(self.email) has been signed up!")
                 contentTitleString = "Sign Up Successful!"
                 contentSubtitleString = "Please restart the app for changes to take place"
-                self.displayName = ""
-                self.email = ""
-                self.password = ""
                 if let currentUser = Auth.auth().currentUser?.createProfileChangeRequest() {
                     currentUser.displayName = self.displayName
                     currentUser.commitChanges(completion: {error in
@@ -91,6 +88,9 @@ struct EmailSignUpView: View {
                         }
                     })
                 }
+                self.displayName = ""
+                self.email = ""
+                self.password = ""
             }
             
             let content = UNMutableNotificationContent()
