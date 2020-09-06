@@ -43,6 +43,11 @@ struct OtherView: View {
             }
         }
         .onAppear() {
+            Auth.auth().currentUser?.reload(completion: { error in
+                if let error = error {
+                    print(error)
+                }
+            })
             self.currentUser = Auth.auth().currentUser
         }
     }

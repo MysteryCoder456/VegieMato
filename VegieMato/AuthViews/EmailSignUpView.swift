@@ -11,6 +11,7 @@ import UserNotifications
 import Firebase
 
 struct EmailSignUpView: View {
+    @State var displayName: String = ""
     @State var email: String = ""
     @State var password: String = ""
     
@@ -26,6 +27,14 @@ struct EmailSignUpView: View {
             }
             
             Spacer()
+            
+            VStack(alignment: .center) {
+                Text("Enter your Display Name:")
+                TextField("Display Name", text: $displayName)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+                    .multilineTextAlignment(.center)
+            }
             
             VStack(alignment: .center) {
                 Text("Enter your Email:")
@@ -66,11 +75,22 @@ struct EmailSignUpView: View {
                 contentSubtitleString = error.localizedDescription
                 self.password = ""
             } else {
-                print("\(self.email) has been logged in!")
+                print("\(self.email) has been signed up!")
                 contentTitleString = "Sign Up Successful!"
                 contentSubtitleString = "You can now access all the features of the app! :D"
+                self.displayName = ""
                 self.email = ""
                 self.password = ""
+                if let currentUser = Auth.auth().currentUser?.createProfileChangeRequest() {
+                    currentUser.displayName = self.displayName
+                    currentUser.commitChanges(completion: {error in
+                        if let error = error {
+                            print(error)
+                        } else {
+                            print("DisplayName changed")
+                        }
+                    })
+                }
             }
             
             let content = UNMutableNotificationContent()
@@ -79,7 +99,7 @@ struct EmailSignUpView: View {
             content.sound = .default
 
             // show this notification one seconds from now
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
             let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
             
             UNUserNotificationCenter.current().add(request)

@@ -11,7 +11,7 @@ import UserNotifications
 import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
 
@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
             if success {
                 print("Notifications authorized!")
+                UNUserNotificationCenter.current().delegate = self
             } else if let error = error {
                 print(error.localizedDescription)
             }
@@ -45,5 +46,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 
 
+}
+
+
+extension AppDelegate {
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+           willPresent notification: UNNotification,
+           withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
+    {
+        completionHandler(.alert)
+    }
+    
 }
 

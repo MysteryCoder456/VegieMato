@@ -79,7 +79,7 @@ struct EmailLoginView: View {
             content.sound = .default
 
             // show this notification one seconds from now
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
             let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
             
             UNUserNotificationCenter.current().add(request)
