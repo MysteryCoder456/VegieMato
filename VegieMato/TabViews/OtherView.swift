@@ -43,7 +43,7 @@ struct OtherView: View {
             }
         }
         .onAppear() {
-            currentUser = Auth.auth().currentUser
+            self.currentUser = Auth.auth().currentUser
         }
     }
 }

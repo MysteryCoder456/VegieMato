@@ -19,7 +19,7 @@ struct ProfileView: View {
                 .font(.largeTitle)
                 .bold()
             
-            ImageView(imageName: "examplePP", width: 200, height: 200)
+            ImageView(imageName: "examplePP", width: 100, height: 100)
             
             Text(user?.displayName ?? "No Username Provided")
                 .font(.title)
@@ -37,7 +37,7 @@ struct ProfileView: View {
         }
         .padding(.top, -25.0)
         .onAppear() {
-            vendorRepo.readUserOwnedVendors()
+            self.vendorRepo.readUserOwnedVendors()
         }
     }
 }

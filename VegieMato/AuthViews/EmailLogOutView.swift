@@ -21,7 +21,7 @@ struct EmailLogOutView: View {
         }
         .padding(.horizontal)
         .onAppear() {
-            logout()
+            self.logout()
         }
     }
     
