@@ -77,7 +77,7 @@ struct EmailSignUpView: View {
             } else {
                 print("\(self.email) has been signed up!")
                 contentTitleString = "Sign Up Successful!"
-                contentSubtitleString = "You can now access all the features of the app! :D"
+                contentSubtitleString = "Please restart the app for changes to take place"
                 self.displayName = ""
                 self.email = ""
                 self.password = ""

@@ -31,8 +31,8 @@ struct EmailLogOutView: View {
         
         do {
             try Auth.auth().signOut()
-            contentTitleString = "Logged Out Successfully!"
-            contentSubtitleString = "You have been Logged Out of VegieMato"
+            contentTitleString = "You have been Logged Out!"
+            contentSubtitleString = "Please restart the app for changes to take place"
         } catch {
             contentTitleString = "Log Out Failed!"
             contentSubtitleString = error.localizedDescription
