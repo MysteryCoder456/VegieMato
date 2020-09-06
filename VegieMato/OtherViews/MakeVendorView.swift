@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 import Firebase
 
 struct MakeVendorView: View {
@@ -51,6 +52,17 @@ struct MakeVendorView: View {
         if let currentUserID = Auth.auth().currentUser?.uid {
             let vendorRepo = VendorRepository()
             let vendorObject = Vendor(id: UUID().uuidString, name: self.newVendorName, tagline: self.newVendorTagline, ownerID: currentUserID)
+            
+            let content = UNMutableNotificationContent()
+            content.title = "Vendor Created Successfully"
+            content.subtitle = "Check it out in the Home Tab"
+            content.sound = .default
+
+            // show this notification one seconds from now
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.1, repeats: false)
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            
+            UNUserNotificationCenter.current().add(request)
 
             vendorRepo.createVendor(vendor: vendorObject)
             self.newVendorName = ""
