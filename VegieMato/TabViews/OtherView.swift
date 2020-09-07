@@ -19,22 +19,32 @@ struct OtherView: View {
                     if currentUser != nil {
                         NavigationLink(destination: ProfileView(user: currentUser)) {
                             Text("Profile")
+                                .font(.headline)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                         }
                         
                         NavigationLink(destination: MakeVendorView()) {
                             Text("Make a new Vendor")
-                        }
+                                .font(.headline)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                       }
                         
                         NavigationLink(destination: EmailLogOutView()) {
                             Text("Log Out")
+                                .font(.headline)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                         }
                     } else {
                         NavigationLink(destination: EmailLoginView()) {
                             Text("Login with your Email")
-                        }
+                                .font(.headline)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                      }
                         
                         NavigationLink(destination: EmailSignUpView()) {
                             Text("Sign Up with your Email")
+                                .font(.headline)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                         }
                     }
                 }

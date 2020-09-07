@@ -29,6 +29,8 @@ struct VendorRow: View {
             
 			Spacer()
 		}
+        .padding(.horizontal, 5)
+        .padding(.vertical, 5)
     }
 }
 
