@@ -2,19 +2,22 @@
 //  HomeView.swift
 //  VegieMato
 //
-//  Created by Harmeet on 03/01/2020.
+//  Created by Rehatbir Singh on 03/01/2020.
 //  Copyright © 2020 MysteryCoder456. All rights reserved.
 //
 
 import SwiftUI
+import Firebase
 
 struct HomeView: View {
+    @ObservedObject var vendorRepo = VendorRepository()
+    
     var body: some View {
 		VStack {
 			TitleBar(content: "VegieMato", color: Color.green, size: 55)
 			
 			NavigationView {
-				List(vendors) { vendor in
+                List(vendorRepo.vendors) { vendor in
                     NavigationLink(destination: VendorView(vendor: vendor)) {
                         VendorRow(vendor: vendor)
                     }
@@ -23,6 +26,9 @@ struct HomeView: View {
 			}
 			.padding(.top, -35)
 		}
+        .onAppear() {
+            self.vendorRepo.readVendors()
+        }
     }
 }
 

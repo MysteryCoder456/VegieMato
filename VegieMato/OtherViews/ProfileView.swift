@@ -2,39 +2,41 @@
 //  ProfileView.swift
 //  VegieMato
 //
-//  Created by Harmeet on 04/07/2020.
+//  Created by Rehatbir Singh on 04/07/2020.
 //  Copyright © 2020 MysteryCoder456. All rights reserved.
 //
 
 import SwiftUI
+import Firebase
 
 struct ProfileView: View {
-    var user: User
+    var user: User?
+    @ObservedObject var vendorRepo = VendorRepository()
     
     var body: some View {
         VStack(alignment: .center) {
             Text("Profile")
-                .font(.system(size: 50))
+                .font(.largeTitle)
                 .bold()
-                .padding(.bottom, -15)
             
-            Divider()
-                .background(Color.black)
-                .padding(.bottom)
+            ImageView(imageName: "examplePP", width: 100, height: 100)
             
-            ImageView(imageName: user.profilePic, width: 200, height: 200)
-            
-            Text(user.name)
+            Text(user?.displayName ?? "No Username Provided")
                 .font(.title)
-            
-            Spacer()
+             
+            List(vendorRepo.userOwnedVendors) { vendor in
+                VendorRow(vendor: vendor)
+            }
         }
         .padding(.top, -25.0)
+        .onAppear() {
+            self.vendorRepo.readUserOwnedVendors()
+        }
     }
 }
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(user: exampleUser)
+        ProfileView()
     }
 }

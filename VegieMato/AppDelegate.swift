@@ -2,19 +2,32 @@
 //  AppDelegate.swift
 //  VegieMato
 //
-//  Created by Harmeet on 03/01/2020.
+//  Created by Rehatbir Singh on 03/01/2020.
 //  Copyright © 2020 MysteryCoder456. All rights reserved.
 //
 
 import UIKit
+import UserNotifications
+import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+            if success {
+                print("Notifications authorized!")
+                UNUserNotificationCenter.current().delegate = self
+            } else if let error = error {
+                print(error.localizedDescription)
+            }
+        }
+        
+        FirebaseApp.configure()
 		return true
 	}
 
@@ -33,5 +46,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 
 
+}
+
+
+extension AppDelegate {
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+           willPresent notification: UNNotification,
+           withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void)
+    {
+        completionHandler(.alert)
+    }
+    
 }
 

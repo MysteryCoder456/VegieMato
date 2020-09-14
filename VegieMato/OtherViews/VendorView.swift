@@ -2,22 +2,23 @@
 //  VendorView.swift
 //  VegieMato
 //
-//  Created by Harmeet on 25/01/2020.
+//  Created by Rehatbir Singh on 25/01/2020.
 //  Copyright © 2020 MysteryCoder456. All rights reserved.
 //
 
 import SwiftUI
+import Firebase
 
 struct VendorView: View {
     var vendor: Vendor
+    @State var showAddPorductView = false
     
     var body: some View {
-        VStack {
-            
-            HStack {
-                Spacer()
-                
-                VStack() {
+        VStack() {
+            if self.showAddPorductView && Auth.auth().currentUser?.uid == vendor.ownerID {
+                AddProductView(vendor: vendor)
+            } else {
+                VStack(alignment: .center) {
                     ImageView(imageName: vendor.imageName, width: 100, height: 100)
                         .padding(.top, -10.0)
                     
@@ -30,22 +31,23 @@ struct VendorView: View {
                     
                     Text(vendor.tagline)
                         .font(.headline)
-                    
-//                    Spacer()
+                }
+                
+                List(vendor.products) { product in
+                    VStack {
+                        ProductRow(product: product)
+                        Spacer()
+                    }
+                }
+                
+                if Auth.auth().currentUser?.uid == vendor.ownerID {
+                    Button(action: {self.showAddPorductView = true}) {
+                        Text("Add Product")
+                    }
                 }
                 
                 Spacer()
             }
-            
-            List(vendor.products) { product in
-                VStack {
-                    ProductRow(product: product)
-                    Spacer()
-                }
-            }
-            
-            Spacer()
-            
         }
     }
 }

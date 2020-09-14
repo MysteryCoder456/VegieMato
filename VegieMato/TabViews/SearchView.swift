@@ -2,20 +2,22 @@
 //  SearchView.swift
 //  VegieMato
 //
-//  Created by Harmeet on 03/01/2020.
+//  Created by Rehatbir Singh on 03/01/2020.
 //  Copyright © 2020 MysteryCoder456. All rights reserved.
 //
 
 import SwiftUI
+import Firebase
 
 struct SearchView: View {
+    @ObservedObject var vendorRepo = VendorRepository()
     @State private var searchText: String = ""
     
     var body: some View {
         NavigationView {
             VStack {
                 SearchBar(text: $searchText)
-                List(vendors.filter {
+                List(vendorRepo.vendors.filter {
                     searchText.isEmpty ? true : $0.name.contains(searchText)
                 }) { vendor in
                     NavigationLink(destination: VendorView(vendor: vendor)) {
@@ -24,6 +26,10 @@ struct SearchView: View {
                 }
                 .navigationBarTitle(Text("Search Vendors"))
             }
+        }
+        
+        .onAppear() {
+            self.vendorRepo.readVendors()
         }
     }
 }
