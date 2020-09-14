@@ -11,7 +11,7 @@ import Foundation
 struct Product: Equatable, Identifiable, Codable {
     var id: String?
     var name: String
-    var price: Int // Price in Indian Rupees per Kilogram
+    var price: Float // Price in Indian Rupees per Kilogram
 }
 
 var defaultProducts = [Product(name: "Product 1", price: 100), Product(name: "Product 2", price: 200)]

@@ -66,4 +66,12 @@ class VendorRepository: ObservableObject {
             }
         }
     }
+    
+    func updateVendor(vendor: Vendor) {
+        do {
+            try db.collection("vendors").document(vendor.id!).setData(from: vendor)
+        } catch {
+            print(error)
+        }
+    }
 }

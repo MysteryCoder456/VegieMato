@@ -10,6 +10,7 @@
 		341BCE012502E55F00E40E73 /* EmailLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BCE002502E55F00E40E73 /* EmailLoginView.swift */; };
 		341BCE032502F7DD00E40E73 /* EmailSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341BCE022502F7DD00E40E73 /* EmailSignUpView.swift */; };
 		34862A352502FF23000184BD /* EmailLogOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34862A342502FF23000184BD /* EmailLogOutView.swift */; };
+		34923072250F4B7500B071EC /* AddProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34923071250F4B7500B071EC /* AddProductView.swift */; };
 		34B0D86A2500D0580054E67F /* VendorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B0D8692500D0580054E67F /* VendorRepository.swift */; };
 		34CF25D62502CC5C00CA0922 /* VendorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */; };
 		34CF25D72502CC5C00CA0922 /* VendorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B0DF9A23C4F6AE003148A4 /* VendorRow.swift */; };
@@ -69,6 +70,7 @@
 		341BCE002502E55F00E40E73 /* EmailLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginView.swift; sourceTree = "<group>"; };
 		341BCE022502F7DD00E40E73 /* EmailSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSignUpView.swift; sourceTree = "<group>"; };
 		34862A342502FF23000184BD /* EmailLogOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLogOutView.swift; sourceTree = "<group>"; };
+		34923071250F4B7500B071EC /* AddProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductView.swift; sourceTree = "<group>"; };
 		34B0D8692500D0580054E67F /* VendorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorRepository.swift; sourceTree = "<group>"; };
 		6DA39ED77F28B6C877461138 /* Pods-VegieMato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMato.release.xcconfig"; path = "Target Support Files/Pods-VegieMato/Pods-VegieMato.release.xcconfig"; sourceTree = "<group>"; };
 		9BBFDEEF308C453FE18D2F33 /* Pods-VegieMato-VegieMatoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegieMato-VegieMatoUITests.debug.xcconfig"; path = "Target Support Files/Pods-VegieMato-VegieMatoUITests/Pods-VegieMato-VegieMatoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 				C97E24DE23DC8CA900313417 /* VendorView.swift */,
 				C954B58A243C9E8F0063B6AA /* ProfileView.swift */,
 				C96B1C7424F151B1007E5CD6 /* MakeVendorView.swift */,
+				34923071250F4B7500B071EC /* AddProductView.swift */,
 				C9A0055923BF9227004D3234 /* TitleBar.swift */,
 				C97E24E623DC8E7E00313417 /* ImageView.swift */,
 			);
@@ -537,6 +540,7 @@
 				C92782AA23ED2E5B0030EE59 /* ProductRow.swift in Sources */,
 				C9A0052923BF8AE4004D3234 /* AppDelegate.swift in Sources */,
 				C9A0052B23BF8AE4004D3234 /* SceneDelegate.swift in Sources */,
+				34923072250F4B7500B071EC /* AddProductView.swift in Sources */,
 				34B0D86A2500D0580054E67F /* VendorRepository.swift in Sources */,
 				C954B58B243C9E8F0063B6AA /* ProfileView.swift in Sources */,
 				C9A0055C23BF95C0004D3234 /* HomeView.swift in Sources */,
