@@ -14,7 +14,7 @@ struct Vendor: Identifiable, Codable {
     @DocumentID var id: String?
     var name: String
     var tagline: String
-    var imageName: String = "exampleVendorPP"
+    var imageName: String = "cart"
     var products: Array<Product> = []
     var ownerID: String?
     
