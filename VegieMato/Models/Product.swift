@@ -16,8 +16,7 @@ struct Product: Equatable, Identifiable, Codable {
 
 var defaultProducts = [Product(name: "Product 1", price: 100), Product(name: "Product 2", price: 200)]
 
-/*
-var products: [String:Array<Product>] = [
+var previewProducts: [String:Array<Product>] = [
     "carrotsForLess": [
         Product(name: "Carrot (Per Kg)", price: 49),
         Product(name: "Carrot Cake", price: 400)
@@ -32,4 +31,3 @@ var products: [String:Array<Product>] = [
         Product(name: "Tomato Soup", price: 49)
     ]
 ]
-*/

@@ -17,19 +17,18 @@ struct VendorBadge: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(15, antialiased: true)
-                .frame(height: 200)
+                .frame(height: 150)
             
             VStack(alignment: .leading, spacing: 3) {
                 Text(vendor.name)
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
                 
                 Text(vendor.tagline)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.secondary)
                     .font(.caption)
             }
         }
-        .padding(.trailing, 20)
-        .shadow(radius: 10)
+        .shadow(radius: 8)
     }
 }
 

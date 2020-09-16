@@ -17,12 +17,28 @@ struct HomeView: View {
 			TitleBar(content: "VegieMato", color: Color.green, size: 55)
 			
 			NavigationView {
-                List(vendorRepo.vendors) { vendor in
-                    NavigationLink(destination: VendorView(vendor: vendor)) {
-                        VendorRow(vendor: vendor)
+                #if os(macOS)
+                    List(vendorRepo.vendors) { vendor in
+                        NavigationLink(destination: VendorView(vendor: vendor)) {
+                            VendorRow(vendor: vendor)
+                        }
+                        .navigationBarTitle(Text("Available Vendors"), displayMode: .large)
                     }
-				}
-				.navigationBarTitle(Text("Available Vendors"), displayMode: .large)
+                #else
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(alignment: .top, spacing: 20) {
+                            ForEach(vendorRepo.vendors) { vendor in
+                                NavigationLink(destination: VendorView(vendor: vendor)) {
+                                    VendorBadge(vendor: vendor)
+                                        .frame(width: 150)
+                                }
+                                .navigationBarTitle(Text("Available Vendors"), displayMode: .large)
+                            }
+                        }
+                        .frame(minHeight: 230)
+                        .padding(.leading)
+                    }
+                #endif
 			}
 			.padding(.top, -35)
 		}
