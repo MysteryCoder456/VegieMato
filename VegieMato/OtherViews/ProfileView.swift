@@ -15,17 +15,22 @@ struct ProfileView: View {
     
     var body: some View {
         VStack(alignment: .center) {
-            Text("Profile")
-                .font(.largeTitle)
-                .bold()
-            
-            ImageView(imageName: "examplePP", width: 100, height: 100)
-            
-            Text(user?.displayName ?? "No Username Provided")
-                .font(.title)
-             
-            List(vendorRepo.userOwnedVendors) { vendor in
-                VendorRow(vendor: vendor)
+            ScrollView(.vertical) {
+                Text("Profile")
+                    .font(.largeTitle)
+                    .bold()
+                
+                ImageView(imageName: "examplePP", width: 100, height: 100)
+                
+                Text(user?.displayName ?? "No Username Provided")
+                    .font(.title)
+                
+                Divider()
+                 
+                ForEach(vendorRepo.userOwnedVendors) { vendor in
+                    VendorRow(vendor: vendor)
+                    Divider()
+                }
             }
         }
         .padding(.top, -25.0)

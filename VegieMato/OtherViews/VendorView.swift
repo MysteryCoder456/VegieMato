@@ -18,35 +18,41 @@ struct VendorView: View {
             if self.showAddPorductView && Auth.auth().currentUser?.uid == vendor.ownerID {
                 AddProductView(vendor: vendor)
             } else {
-                VStack(alignment: .center) {
-                    ImageView(imageName: vendor.imageName, width: 100, height: 100)
-                        .padding(.top, -10.0)
-                    
-                    Text(vendor.name)
-                        .font(.largeTitle)
-                        .fontWeight(.heavy)
-                        .padding(.vertical, 5.0)
-                        .multilineTextAlignment(.center)
-                        .fixedSize()
-                    
-                    Text(vendor.tagline)
-                        .font(.headline)
-                }
-                
-                List(vendor.products) { product in
-                    VStack {
-                        ProductRow(product: product)
-                        Spacer()
+                ScrollView(.vertical) {
+                    VStack(alignment: .center) {
+                        ImageView(imageName: vendor.imageName, width: 100, height: 100)
+                            .padding(.top, -10.0)
+                        
+                        Text(vendor.name)
+                            .font(.largeTitle)
+                            .fontWeight(.heavy)
+                            .padding(.vertical, 5.0)
+                            .multilineTextAlignment(.center)
+                            .fixedSize()
+                        
+                        Text(vendor.tagline)
+                            .font(.headline)
                     }
-                }
-                
-                if Auth.auth().currentUser?.uid == vendor.ownerID {
-                    Button(action: {self.showAddPorductView = true}) {
-                        Text("Add Product")
+                    
+                    Divider()
+                    
+                    ForEach(vendor.products) { product in
+                        VStack {
+                            ProductRow(product: product)
+                            Spacer()
+                        }
+                        
+                        Divider()
                     }
+                    
+                    if Auth.auth().currentUser?.uid == vendor.ownerID {
+                        Button(action: {self.showAddPorductView = true}) {
+                            Text("Add Product")
+                        }
+                    }
+                    
+                    Spacer()
                 }
-                
-                Spacer()
             }
         }
     }
