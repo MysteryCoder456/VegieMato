@@ -16,15 +16,17 @@ struct HomeView: View {
 		VStack {
 			TitleBar(content: "VegieMato", color: Color.green, size: 55)
 			
-			NavigationView {
-                #if os(macOS)
+            #if targetEnvironment(macCatalyst)
+                NavigationView {
                     List(vendorRepo.vendors) { vendor in
                         NavigationLink(destination: VendorView(vendor: vendor)) {
                             VendorRow(vendor: vendor)
                         }
                         .navigationBarTitle(Text("Available Vendors"), displayMode: .large)
                     }
-                #else
+                }.padding(.top, -35)
+            #else
+                NavigationView {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack(alignment: .top, spacing: 20) {
                             ForEach(vendorRepo.vendors) { vendor in
@@ -36,14 +38,30 @@ struct HomeView: View {
                             }
                         }
                         .frame(minHeight: 230)
-                        .padding(.leading)
+                        .padding(.horizontal)
                     }
-                #endif
-			}
-			.padding(.top, -35)
+                }.padding(.top, -35)
+            
+                NavigationView {
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack(alignment: .top, spacing: 20) {
+                            ForEach(vendorRepo.userOwnedVendors) { vendor in
+                                NavigationLink(destination: VendorView(vendor: vendor)) {
+                                    VendorBadge(vendor: vendor)
+                                        .frame(width: 150)
+                                }
+                                .navigationBarTitle(Text("Your Vendors"), displayMode: .large)
+                            }
+                        }
+                        .frame(minHeight: 230)
+                        .padding(.horizontal)
+                    }
+                }.padding(.top, -35)
+            #endif
 		}
         .onAppear() {
             self.vendorRepo.readVendors()
+            self.vendorRepo.readUserOwnedVendors()
         }
     }
 }
