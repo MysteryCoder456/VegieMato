@@ -39,7 +39,7 @@ struct VendorView: View {
                     ForEach(vendor.products) { product in
                         VStack {
                             ProductRow(product: product)
-                            Spacer()
+                                .padding(.all)
                         }
                         
                         Divider()
