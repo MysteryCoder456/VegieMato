@@ -27,18 +27,40 @@ struct HomeView: View {
                 }.padding(.top, -35)
             #else
                 NavigationView {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(alignment: .top, spacing: 20) {
-                            ForEach(vendorRepo.vendors) { vendor in
-                                NavigationLink(destination: VendorView(vendor: vendor)) {
-                                    VendorBadge(vendor: vendor)
-                                        .frame(width: 150)
+                    List {
+                        Text("Available Vendors")
+                            .font(.system(size: 35))
+                        
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(alignment: .top, spacing: 20) {
+                                ForEach(vendorRepo.vendors) { vendor in
+                                    NavigationLink(destination: VendorView(vendor: vendor)) {
+                                        VendorBadge(vendor: vendor)
+                                            .frame(width: 150)
+                                    }
+                                    .navigationBarHidden(true)
                                 }
-                                .navigationBarTitle(Text("Available Vendors"), displayMode: .large)
                             }
+                            .frame(minHeight: 250)
+                            .padding(.horizontal)
                         }
-                        .frame(minHeight: 250)
-                        .padding(.horizontal)
+                        
+                        Text("Your Vendors")
+                            .font(.system(size: 35))
+
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(alignment: .top, spacing: 20) {
+                                ForEach(vendorRepo.userOwnedVendors) { vendor in
+                                    NavigationLink(destination: VendorView(vendor: vendor)) {
+                                        VendorBadge(vendor: vendor)
+                                            .frame(width: 150)
+                                    }
+                                    .navigationBarHidden(true)
+                                }
+                            }
+                            .frame(minHeight: 250)
+                            .padding(.horizontal)
+                        }
                     }
                 }.padding(.top, -35)
             #endif
