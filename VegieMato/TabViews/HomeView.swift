@@ -37,23 +37,7 @@ struct HomeView: View {
                                 .navigationBarTitle(Text("Available Vendors"), displayMode: .large)
                             }
                         }
-                        .frame(minHeight: 230)
-                        .padding(.horizontal)
-                    }
-                }.padding(.top, -35)
-            
-                NavigationView {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(alignment: .top, spacing: 20) {
-                            ForEach(vendorRepo.userOwnedVendors) { vendor in
-                                NavigationLink(destination: VendorView(vendor: vendor)) {
-                                    VendorBadge(vendor: vendor)
-                                        .frame(width: 150)
-                                }
-                                .navigationBarTitle(Text("Your Vendors"), displayMode: .large)
-                            }
-                        }
-                        .frame(minHeight: 230)
+                        .frame(minHeight: 250)
                         .padding(.horizontal)
                     }
                 }.padding(.top, -35)
