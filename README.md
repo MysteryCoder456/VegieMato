@@ -1,5 +1,5 @@
 # VegieMato
-A Zomato Clone for Indian Vegetable Vendors. **WARNING** - This app only works on devices running iOS or iPadOS 13 and above, and MacOS 10.15 and above!
+A Delivery App for Indian Vegetable Vendors. **WARNING** - This app only works on devices running iOS or iPadOS 13 and above, and MacOS 10.15 and above!
 
 ## How to Install on iOS or iPadOS Devices
 This app is currently not on the app store, so you will require Xcode to install it to your device. Xcode is only available on MacOS, but you do not require a Mac Computer. You can also use a Virtual Machine as long as you can install Xcode on it.<br>
